@@ -1,0 +1,57 @@
+@charset "UFT 8";
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-areas:
+    "img1 img2 img3"
+    "img4 title img5"
+    "img6 img7 img8";
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item img {
+  width: 100%;
+  max-width: 150px; /* Ajusta o tamanho máximo das imagens */
+  border-radius: 8px;
+}
+
+.center-title {
+  grid-area: title;
+  text-align: center;
+}
+
+.center-title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #555;
+}
